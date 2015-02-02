@@ -10,7 +10,7 @@ RUN apt-get -y install software-properties-common
 RUN apt-get update && apt-get -y upgrade
 RUN echo "JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64" >> /etc/environment
 
-RUN http://mirror.atlanticmetro.net/apache/tomcat/tomcat-7/v7.0.57/bin/apache-tomcat-7.0.57.tar.gz
+RUN wget http://mirror.atlanticmetro.net/apache/tomcat/tomcat-7/v7.0.57/bin/apache-tomcat-7.0.57.tar.gz
 RUN tar xzvf  apache-tomcat-7.0.57.tar.gz
 RUN mkdir -p /usr/local/tomcat7
 RUN mv apache-tomcat-7.0.57 /usr/local/tomcat7

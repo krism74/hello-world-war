@@ -1,5 +1,5 @@
 #!/bin/bash
-#this is a script to push to docker
+#this is a script to push to docker,test1
 DOCKER_TAG_BASE="helloworld_"
 DOCKER_USERNAME=$1
 DOCKER_PASSWORD=$2
